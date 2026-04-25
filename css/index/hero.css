@@ -1,0 +1,175 @@
+.hero {
+  position: relative;
+
+  .hero-socials {
+    display: none;
+  }
+
+  .hero-slider {
+    position: relative;
+    background-color: rgb(200, 205, 209);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    /* min-height: 20vh; */
+    .hero-slider__slide {
+      height: auto;
+      max-width: 100%;
+    }
+
+    .hero-slider__body {
+      .hero-slider__controls,
+      .hero-slider__actions,
+      .hero-slider__text-secondary {
+        display: none;
+      }
+
+      .hero-slider__title {
+        text-align: left;
+        text-transform: uppercase;
+        font-family: var(--font-main);
+        font-size: var(--font-size-title-mobile);
+        padding-bottom: 1rem;
+      }
+
+      .hero-slider__meta-index {
+        text-align: left;
+
+        font-family: var(--font-main);
+        font-size: var(--font-size-subtitle-mobile);
+        font-weight: 600;
+      }
+
+      .hero-slider__meta-label {
+        text-align: left;
+        text-transform: uppercase;
+        font-family: var(--font-main);
+        font-size: var(--font-size-text-mobile);
+        font-weight: 400;
+      }
+
+      .hero-slider__text-primary {
+        text-align: left;
+
+        font-family: var(--font-main);
+        font-size: var(--font-size-text-mobile);
+      }
+    }
+  }
+
+  .hero-monthly {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    background: url(../../img/monthly-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* min-height: 100vh; */
+    .hero-monthly__content {
+      .hero-monthly__title {
+        color: var(--font-color-monthly);
+        text-transform: uppercase;
+        font-family: var(--font-main);
+        font-size: var(--font-size-title-mobile);
+        max-width: 10ch;
+        padding: 15px 0;
+      }
+
+      .hero-monthly__text {
+        color: var(--font-color-monthly);
+        font-family: var(--font-main);
+        font-size: var(--font-size-subtitle-mobile);
+        max-width: 10ch;
+        padding-bottom: 15px;
+      }
+
+      .hero-monthly__prices {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+
+        .hero-monthly__price-item {
+          align-items: center;
+          justify-self: center;
+        }
+
+        .hero-monthly__price-old {
+          color: var(--font-color-monthly);
+          font-family: var(--font-main);
+          font-size: var(--font-size-subtitle-mobile);
+          font-size: 1.5rem;
+          text-decoration: line-through;
+        }
+
+        .hero-monthly__price-new {
+          color: var(--font-color-monthly);
+          font-family: var(--font-main);
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        .button-shop--monthly {
+          background: var(--bg-color-monthly-button);
+          color: var(--font-color-monthly-button);
+          font-weight: var(--font-weight-button);
+        }
+      }
+
+      .hero-monthly__time {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .hero-monthly__time-item:nth-child(3) {
+          display: none;
+        }
+
+        .hero-monthly__time-item {
+          width: 50px;
+          height: 50px;
+          padding: 2px;
+          background-color: var(--box-color-monthly);
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1px;
+
+          margin: 15px 0;
+
+          .hero-monthly__time-delim,
+          .hero-monthly__time-text {
+            display: none;
+          }
+
+          .hero-monthly__time-number {
+            color: var(--font-color-timer);
+            font-family: var(--font-main);
+            font-size: var(--font-size-timer);
+            font-weight: 600;
+          }
+
+          .hero-monthly__time-text2 {
+            color: var(--font-color-timer);
+            font-family: var(--font-main);
+            font-size: var(--font-size-subtitle-mobile);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,7 @@
+/* Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+/* Styles */
 @import url("./global.css");
+@import url("./index/header.css");
+@import url("./index/hero.css");

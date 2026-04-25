@@ -15,6 +15,24 @@
   /* Variables */
   --container-width: 1200px;
   --body-bg-color: rgb(255, 255, 255);
+
+  --font-main: "Montserrat", sans-serif;
+  --font-size-title-mobile: 1.5rem;
+  --font-size-subtitle-mobile: 1rem;
+  --font-size-text-mobile: 0.7rem;
+
+  /* Shop now button */
+  --bg-color-default-button: rgb(23, 23, 23);
+  --font-color-default-button: rgb(255, 255, 255);
+  --font-weight-button: 600;
+  --bg-color-monthly-button: rgb(243, 235, 220);
+  --font-color-monthly-button: rgb(18, 18, 18);
+
+  /* Deal of the month */
+  --font-color-monthly: rgb(255, 255, 255);
+  --font-color-timer: rgb(18, 18, 18);
+  --box-color-monthly: rgb(255, 255, 255);
+  --font-size-timer: 1.5rem;
 }
 
 .container {
@@ -33,4 +51,21 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+.button-shop {
+  width: 100px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  font-size: 0.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--bg-color-default-button);
+  color: var(--font-color-default-button);
+  border-radius: 50px;
+  font-weight: 600;
+  margin: 1rem;
 }
