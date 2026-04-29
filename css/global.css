@@ -21,6 +21,10 @@
   --font-size-subtitle-mobile: 1rem;
   --font-size-text-mobile: 0.7rem;
 
+  --font-size-title-tablet: 2.5rem;
+  --font-size-subtitle-tablet: 1.5rem;
+  --font-size-text-tablet: 1rem;
+
   /* Shop now button */
   --bg-color-default-button: rgb(23, 23, 23);
   --font-color-default-button: rgb(255, 255, 255);
@@ -32,7 +36,8 @@
   --font-color-monthly: rgb(255, 255, 255);
   --font-color-timer: rgb(18, 18, 18);
   --box-color-monthly: rgb(255, 255, 255);
-  --font-size-timer: 1.5rem;
+  --font-size-timer: 1rem;
+  --font-size-timer-tablet: 1.5rem;
 }
 
 .container {
